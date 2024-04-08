@@ -8,10 +8,6 @@ My goal was to utlize a few features that that the libary has to offer. Speifica
 Please refernece the React InstantSearch libary here: [https://www.algolia.com/doc/api-reference/widgets/instantsearch/react/](https://www.algolia.com/doc/api-reference/widgets/instantsearch/react/)
 
 
-# Utilized Create React App 
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 # Install dependencies
 
 ### npm install algoliasearch react-instantsearch
@@ -33,10 +29,11 @@ function App() {
     </InstantSearch>
   );
 }
-````
+```
 
+### App was created with Create React App 
 
-
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### `npm start`
 
