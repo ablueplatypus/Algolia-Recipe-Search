@@ -35,7 +35,7 @@ function App() {
       />
       <SortBy
               items={[
-                { label: 'Raiting', valueL: 'test_recipes'},
+                { label: 'Raiting', value: 'test_recipes'},
                 { label: 'Raiting (asc)', value: 'test_recipes_raiting_asc' },
                 { label: 'Raiting (desc)', value: 'test_recipes_raiting_desc' },
               ]}
