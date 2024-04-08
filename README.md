@@ -1,12 +1,45 @@
-# Getting Started with Create React App
+
+
+# Goal of the Projectgit
+Project was creating a Algolia Search page with the React InstantSearch Framework. 
+
+My goal was to utlize a few features that that the libary has to offer. Speifically, Stats, SortBy, Pagination, and Highlights. The libary is very extensive and has a lot more components and features avaliable to utilize. 
+
+Please refernece the React InstantSearch libary here: [https://www.algolia.com/doc/api-reference/widgets/instantsearch/react/](https://www.algolia.com/doc/api-reference/widgets/instantsearch/react/)
+
+
+# Utilized Create React App 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Install dependencies
 
-In the project directory, you can run:
+### npm install algoliasearch react-instantsearch
+# or
+### yarn add algoliasearch react-instantsearch
+
+```javascript
+
+import React from 'react';
+import algoliasearch from 'algoliasearch/lite';
+import { InstantSearch } from 'react-instantsearch';
+
+const searchClient = algoliasearch('YourApplicationID', 'YourSearchOnlyAPIKey'');
+
+function App() {
+  return (
+    <InstantSearch searchClient={searchClient} indexName="instant_search">
+      {/* Widgets */}
+    </InstantSearch>
+  );
+}
+````
+
+
+
 
 ### `npm start`
+
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.

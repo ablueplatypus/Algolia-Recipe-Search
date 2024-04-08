@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
-}
+/*==============================
+  Table of Contents
+  ==============================
+  1.0 Globals
+  2.0 Components
+  2.1 Buttons & Inputs
+  2.2 Header
+  2.3 Search
+  2.4 Articles
+  2.5 Footer
+  
+  */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  /* 1.0 Globals */
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li {
+  list-style: none;
+}
+
+
+/* 2.1 Buttons & Inputs */
+ input.ais-SearchBox-input {
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid #d6d6e7;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 4px 0 rgba(119,122,175,.3);
+  caret-color: #5a5e9a;
+  color: #23263b;
+  flex: 1 1;
+  font: inherit;
+  max-width: 100%;
+  padding-left: 2.5rem;
+}
+
+.ais-SearchBox-form:before {
+  background: transparent url(data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%235a5e9a%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%2211%22%20cy%3D%2211%22%20r%3D%228%22%3E%3C%2Fcircle%3E%3Cline%20x1%3D%2221%22%20y1%3D%2221%22%20x2%3D%2216.65%22%20y2%3D%2216.65%22%3E%3C%2Fline%3E%3C%2Fsvg%3E) repeat scroll 0 0;
+  content: "";
+  height: 1rem;
+  left: 1rem;
+  margin-top: -.5rem;
+  position: absolute;
+  top: 50%;
+  width: 1rem;
+}
+
+.ais-SearchBox-form {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: .875rem;
+  height: 2.5rem;
+  line-height: 1.25rem;
+  position: relative;
+  width: 100%;
+}
+
+.ais-SearchBox {
+  width: 56%;
+  padding: 10px;
+  color: #21243d;
+  font-size: 0.75rem;
+}
+
+
+.search-button button:hover {
+  background: #0b7dda;
+}
+
+button.ais-SearchBox-reset{
+  width: auto;
+  padding: 13px;
+  margin-left: 1px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; 
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.ais-SearchBox-submit {
+  display: none;
+}
+
+.ais-SearchBox-reset[hidden] {
+  display: none;
+}
+
+/* 2.2 Header */
+.HitDetails {
+  align-items: center;
+  display: flex;
+  flex-grow: 0;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/*  2.4 Articles */
+
+img {
+  height: auto;
+  max-width: 250px;
+}
+
+/* .ais-Highlight-highlighted, .ais-Snippet-highlighted {
+  background-color: #ffc168;
+} */
+
+ol li {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+
+li.ais-Pagination-item{ 
+  padding: 8px;
+}
+
+ul.ais-Pagination-list {
+  padding: 0px;
+  margin: 10px;
+  display: flex;
+}
+/*  2.5 Footer */
+
+.row {
+  display: flex;
+}
+
+.col-md-6 {
+  padding-left: 10%;
+}
+
+footer {
+  background: #31318d;
+  width: 100%;
+  font-size: 1.5rem;
 }
