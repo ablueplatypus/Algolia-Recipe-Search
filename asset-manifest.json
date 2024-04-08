@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Algolia-Recipe-Search/static/css/main.d8e35939.css",
-    "main.js": "/Algolia-Recipe-Search/static/js/main.cf8d2e93.js",
+    "main.js": "/Algolia-Recipe-Search/static/js/main.fcca8bc6.js",
     "static/js/453.6571c670.chunk.js": "/Algolia-Recipe-Search/static/js/453.6571c670.chunk.js",
     "index.html": "/Algolia-Recipe-Search/index.html",
     "main.d8e35939.css.map": "/Algolia-Recipe-Search/static/css/main.d8e35939.css.map",
-    "main.cf8d2e93.js.map": "/Algolia-Recipe-Search/static/js/main.cf8d2e93.js.map",
+    "main.fcca8bc6.js.map": "/Algolia-Recipe-Search/static/js/main.fcca8bc6.js.map",
     "453.6571c670.chunk.js.map": "/Algolia-Recipe-Search/static/js/453.6571c670.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d8e35939.css",
-    "static/js/main.cf8d2e93.js"
+    "static/js/main.fcca8bc6.js"
   ]
 }
